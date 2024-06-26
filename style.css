@@ -1,0 +1,508 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    background-color: #F7F7F7;
+}
+
+.header {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    padding-left: 50px;
+}
+
+@font-face {
+    font-family: myfont;
+    src: url(Futura-Bold.woff2);
+}
+
+.logo h1 {
+    font-size: 2vw;
+    font-weight: 200;
+    font-family: myfont;
+    line-height: 1;
+}
+
+.nav {
+    padding-right: 50px;
+    height: 50px;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav ul li {
+    padding: 0px 30px;
+}
+
+@font-face {
+    font-family: mera;
+    src: url(HelveticaNowText-Regular.woff2);
+}
+
+.nav ul li a {
+    font-size: 1.10vw;
+    font-family: mera;
+    font-weight: 100;
+    text-decoration: none;
+    color: black;
+}
+
+.nav ul li a::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #000;
+    display: block;
+    margin: 1px;
+    transition: 0.3s;
+}
+
+.nav ul li a:hover::after {
+    width: 100%;
+}
+
+.nav ul li a:hover {
+    color: #00000089;
+}
+
+.nav ul li a span {
+    padding-left: 5px;
+    font-size: 1.20vw;
+}
+
+.nav i {
+    padding-left: 30px;
+    font-size: 1.50vw;
+    cursor: pointer;
+}
+
+.content {
+    margin-top: 6%;
+}
+
+.content h1 {
+    font-size: 15vw;
+    line-height: 1;
+    font-family: myfont;
+}
+
+.vedio-container {
+    padding-top: 2vw;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding-bottom: 2vw;
+
+}
+
+.vedio-container video {
+    width: 98%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.cursor {
+    height: 7vw;
+    width: 7vw;
+    background-color: #000;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+}
+
+.cursor p {
+    color: #fff;
+    font-family: "poppins", sans-serif;
+}
+
+.cursor p span {
+    padding-right: 3px;
+    font-size: 1.40vw;
+}
+
+.page2 {
+    width: 100%;
+    height: 100vh;
+    background-color: #F7F7F7;
+}
+
+.page2-t {
+    width: 100%;
+    height: 30px;
+    border-bottom: 1px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.page2-t h1 {
+    font-size: 1.20vw;
+    font-family: mera;
+    font-weight: 200;
+    padding-left: 30px;
+
+}
+
+.page2-t h2 {
+    font-size: 1.20vw;
+    font-family: mera;
+    font-weight: 200;
+    padding-right: 30px;
+}
+
+.page2-card {
+    width: 100%;
+    height: 87%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.card1 {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(https://cdn.sanity.io/images/w8f1ak3c/production/9032e317a6741221ae543fdae5d05160819f9a44-1500x2250.jpg/DSC0079_Dexter%20Kim.jpg?rect=0,0,1500,2008&fp-x=0.47794117647058826&fp-y=0.4461323529411765&w=1024&h=1707&fit=crop&crop=focalpoint&auto=format);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card2 {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(https://cdn.sanity.io/images/w8f1ak3c/production/138e191deead80c5c8e9a982c20987f8f83c1f27-5504x8256.jpg/JTG_2919%20copy.jpg?rect=276,0,4953,8256&w=1024&h=1707&fit=min&auto=format);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card3 {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(https://cdn.sanity.io/images/w8f1ak3c/production/d3151106849ff2494d66916cf554c68a0603444d-902x1500.png/Rectangle%20220.png?rect=1,0,900,1500&w=640&h=1067&fit=min&auto=format);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbar {
+    width: 70%;
+    height: 50px;
+    background-color: #F5DFCF;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    padding: 0px 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.20vw;
+    font-family: mera;
+}
+
+.page3 {
+    width: 100%;
+    height: 80vh;
+    background-color: #F7F7F7;
+}
+
+.about {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about1 {
+    width: 100%;
+    height: 100%;
+}
+
+.a-t {
+    padding-top: 50px;
+    padding-left: 20px;
+}
+
+@font-face {
+    font-family: my;
+    src: url(memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2);
+}
+
+.a-t h1 {
+    font-weight: 900;
+    font-size: 4vw;
+    font-family: my;
+}
+
+.a-t1 {
+    padding-top: 70px;
+    padding-left: 100px;
+    width: 50%;
+}
+
+.a-t1 p {
+    font-weight: 200;
+    font-size: 1.40vw;
+    font-family: my;
+    padding-bottom: 20px;
+}
+
+.a-t1 h2 {
+    font-weight: 200;
+    font-size: 1.40vw;
+    font-family: my;
+    padding-bottom: 30px;
+}
+
+.a-t1 a {
+    font-size: 1.20vw;
+    text-decoration: none;
+    font-family: mera;
+    color: #000;
+    letter-spacing: -1px;
+}
+
+.a-t1 a span {
+    font-size: 1.30vw;
+    font-weight: 600;
+    padding-left: 2px;
+}
+
+.a-t1 a::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #000;
+    display: block;
+    margin: 1px;
+    transition: 0.3s;
+}
+
+.a-t1 a:hover::after {
+    width: 42%;
+}
+
+
+.page4 {
+    width: 100%;
+    height: 70vh;
+    background-color: #F7F7F7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container1 {
+    width: 50%;
+    height: 100%;
+}
+.container1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.container1 h1{
+    text-align: center;
+    font-size: 1vw;
+    font-weight: 100;
+    font-family: mera;
+    padding-bottom: 10px;
+}
+.container1 p{
+    text-align: center;
+    font-size: 1vw;
+    font-weight: 100;
+    font-family: mera;
+}
+
+#sidenav {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    background-color: #000;
+    z-index: 2;
+    transition: 0.5s;
+}
+nav ul {
+    padding: 0vw 45vw;
+}
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    font-size: 3.50vw;
+    text-align:right;
+    font-weight: 900;
+}
+
+#menubtn {
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    position: fixed;
+    right: 6px;
+    top: 17px;
+    border-radius: 3px;
+    z-index: 3;
+    cursor: pointer;
+}
+
+#menubtn img {
+    width: 25px;
+    margin-top: 15px;
+}
+ 
+nav ul li a::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #F7F7F7;
+    display: block;
+    transition: 0.3s;
+}
+nav ul li a:hover::after {
+    width: 100%;
+}
+.page5{
+    width: 100%;
+    height: 100vh;
+    background-color: #F7F7F7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    gap:30px;
+}
+.impact1{
+    width: 30%;
+    height: 90%;
+}
+.impact1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.a-t2 {
+    padding-top: 20px;
+}
+
+.a-t2 p {
+    font-weight: 200;
+    font-size: 1.40vw;
+    font-family: my;
+    padding-bottom: 20px;
+}
+
+.a-t2 h2 {
+    font-weight: 200;
+    font-size: 1.40vw;
+    font-family: my;
+    padding-bottom: 30px;
+}
+.a-t2 h1{
+    font-size: 2vw;
+    font-family: mera;
+    font-weight: 300;
+    padding-bottom: 20px;
+}
+
+.a-t2 a {
+    font-size: 1.20vw;
+    text-decoration: none;
+    font-family: mera;
+    color: #000;
+    letter-spacing: -1px;
+}
+
+.a-t2 a span {
+    font-size: 1.30vw;
+    font-weight: 600;
+    padding-left: 2px;
+}
+
+.a-t2 a::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #000;
+    display: block;
+    margin: 1px;
+    transition: 0.3s;
+}
+
+.a-t2 a:hover::after {
+    width: 38%;
+}
+.mail{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+}
+.mail input{
+    width: 80%;
+    height: 90%;
+    background-color: transparent;
+    border-bottom: 2px solid #000;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-size: 3vw;
+    font-family: mera;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+.mail span{
+    font-size: 2.30vw;
+}
